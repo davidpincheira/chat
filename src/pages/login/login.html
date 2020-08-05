@@ -1,0 +1,27 @@
+
+<ion-header>
+
+</ion-header>
+
+
+<ion-content class="background">
+	<ion-card>
+		<ion-card-content>
+			<ion-list no-lines>
+				<div class="spacer" style="height: 10px;"></div>
+				<ion-item>
+					<ion-input type="email" placeholder="correo" [(ngModel)]="credentials.email"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-input type="password" placeholder="contraseña" [(ngModel)]="credentials.password"></ion-input>
+				</ion-item>
+				<a (click)="passwordreset()">Olvido su contraseña?<p>Pedir ayuda</p></a>
+				<div class="spacer" style="height: 10px;"></div>
+					<button ion-button block round outline color="light" (click)="signin()">Entrar</button> 
+				<div class="spacer" style="height: 10px;"></div>
+					<button ion-button clear full color="light" (click)="signup()">Registrarse</button> 
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+
+</ion-content>
